@@ -11,6 +11,28 @@
 		FC2BEA5B271711C800AAF38B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEA5A271711C800AAF38B /* ContentView.swift */; };
 		FC2BEA5D271711CA00AAF38B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC2BEA5C271711CA00AAF38B /* Assets.xcassets */; };
 		FC2BEA60271711CA00AAF38B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC2BEA5F271711CA00AAF38B /* Preview Assets.xcassets */; };
+		FC2BEA6E2717128C00AAF38B /* DateFormatter+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEA6D2717128C00AAF38B /* DateFormatter+Ext.swift */; };
+		FC2BEA702717129200AAF38B /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEA6F2717129200AAF38B /* Color+Ext.swift */; };
+		FC2BEA722717129900AAF38B /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEA712717129900AAF38B /* String+Ext.swift */; };
+		FC2BEA742717132200AAF38B /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEA732717132200AAF38B /* APIService.swift */; };
+		FC2BEA762717134100AAF38B /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEA752717134100AAF38B /* APIError.swift */; };
+		FC2BEA782717136800AAF38B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEA772717136800AAF38B /* User.swift */; };
+		FC2BEA7A2717136E00AAF38B /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEA792717136E00AAF38B /* Account.swift */; };
+		FC2BEA7C2717137400AAF38B /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEA7B2717137400AAF38B /* Transaction.swift */; };
+		FC2BEA7E2717137B00AAF38B /* Statistic.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEA7D2717137B00AAF38B /* Statistic.swift */; };
+		FC2BEA802717152200AAF38B /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEA7F2717152200AAF38B /* UserStore.swift */; };
+		FC2BEA822717177400AAF38B /* UserAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEA812717177400AAF38B /* UserAPIService.swift */; };
+		FC2BEA8427171A0500AAF38B /* AppLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEA8327171A0500AAF38B /* AppLoading.swift */; };
+		FC2BEA8627171A1F00AAF38B /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEA8527171A1F00AAF38B /* AuthView.swift */; };
+		FC2BEA8827171A3900AAF38B /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEA8727171A3900AAF38B /* TabView.swift */; };
+		FC2BEA9427171E3500AAF38B /* AuthLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEA9327171E3500AAF38B /* AuthLoginView.swift */; };
+		FC2BEA9627171E3B00AAF38B /* AuthRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEA9527171E3B00AAF38B /* AuthRegisterView.swift */; };
+		FC2BEA9827171E4200AAF38B /* AuthHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEA9727171E4200AAF38B /* AuthHomeView.swift */; };
+		FC2BEA9A27171EA100AAF38B /* AppButtonPrimary.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEA9927171EA100AAF38B /* AppButtonPrimary.swift */; };
+		FC2BEA9C27171EAB00AAF38B /* AppButtonSecondary.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEA9B27171EAB00AAF38B /* AppButtonSecondary.swift */; };
+		FC2BEA9E271725B800AAF38B /* AppTextFieldBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEA9D271725B800AAF38B /* AppTextFieldBase.swift */; };
+		FC2BEAA027172C8B00AAF38B /* AuthLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEA9F27172C8B00AAF38B /* AuthLoginViewModel.swift */; };
+		FC2BEAA227172C9500AAF38B /* AuthRegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEAA127172C9500AAF38B /* AuthRegisterViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +41,28 @@
 		FC2BEA5A271711C800AAF38B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FC2BEA5C271711CA00AAF38B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC2BEA5F271711CA00AAF38B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FC2BEA6D2717128C00AAF38B /* DateFormatter+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Ext.swift"; sourceTree = "<group>"; };
+		FC2BEA6F2717129200AAF38B /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		FC2BEA712717129900AAF38B /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		FC2BEA732717132200AAF38B /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		FC2BEA752717134100AAF38B /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		FC2BEA772717136800AAF38B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FC2BEA792717136E00AAF38B /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		FC2BEA7B2717137400AAF38B /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		FC2BEA7D2717137B00AAF38B /* Statistic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statistic.swift; sourceTree = "<group>"; };
+		FC2BEA7F2717152200AAF38B /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
+		FC2BEA812717177400AAF38B /* UserAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPIService.swift; sourceTree = "<group>"; };
+		FC2BEA8327171A0500AAF38B /* AppLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLoading.swift; sourceTree = "<group>"; };
+		FC2BEA8527171A1F00AAF38B /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		FC2BEA8727171A3900AAF38B /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		FC2BEA9327171E3500AAF38B /* AuthLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthLoginView.swift; sourceTree = "<group>"; };
+		FC2BEA9527171E3B00AAF38B /* AuthRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRegisterView.swift; sourceTree = "<group>"; };
+		FC2BEA9727171E4200AAF38B /* AuthHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHomeView.swift; sourceTree = "<group>"; };
+		FC2BEA9927171EA100AAF38B /* AppButtonPrimary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButtonPrimary.swift; sourceTree = "<group>"; };
+		FC2BEA9B27171EAB00AAF38B /* AppButtonSecondary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButtonSecondary.swift; sourceTree = "<group>"; };
+		FC2BEA9D271725B800AAF38B /* AppTextFieldBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTextFieldBase.swift; sourceTree = "<group>"; };
+		FC2BEA9F27172C8B00AAF38B /* AuthLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthLoginViewModel.swift; sourceTree = "<group>"; };
+		FC2BEAA127172C9500AAF38B /* AuthRegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRegisterViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +95,10 @@
 		FC2BEA57271711C800AAF38B /* ihtisap-ios */ = {
 			isa = PBXGroup;
 			children = (
+				FC2BEA8E27171BC300AAF38B /* utils */,
+				FC2BEA6C2717124900AAF38B /* views */,
+				FC2BEA692717122000AAF38B /* stores */,
+				FC2BEA682717121A00AAF38B /* models */,
 				FC2BEA58271711C800AAF38B /* ihtisap_iosApp.swift */,
 				FC2BEA5A271711C800AAF38B /* ContentView.swift */,
 				FC2BEA5C271711CA00AAF38B /* Assets.xcassets */,
@@ -65,6 +113,96 @@
 				FC2BEA5F271711CA00AAF38B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FC2BEA662717120900AAF38B /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FC2BEA6D2717128C00AAF38B /* DateFormatter+Ext.swift */,
+				FC2BEA6F2717129200AAF38B /* Color+Ext.swift */,
+				FC2BEA712717129900AAF38B /* String+Ext.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		FC2BEA672717121000AAF38B /* networking */ = {
+			isa = PBXGroup;
+			children = (
+				FC2BEA732717132200AAF38B /* APIService.swift */,
+				FC2BEA752717134100AAF38B /* APIError.swift */,
+				FC2BEA812717177400AAF38B /* UserAPIService.swift */,
+			);
+			path = networking;
+			sourceTree = "<group>";
+		};
+		FC2BEA682717121A00AAF38B /* models */ = {
+			isa = PBXGroup;
+			children = (
+				FC2BEA772717136800AAF38B /* User.swift */,
+				FC2BEA792717136E00AAF38B /* Account.swift */,
+				FC2BEA7B2717137400AAF38B /* Transaction.swift */,
+				FC2BEA7D2717137B00AAF38B /* Statistic.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		FC2BEA692717122000AAF38B /* stores */ = {
+			isa = PBXGroup;
+			children = (
+				FC2BEA7F2717152200AAF38B /* UserStore.swift */,
+			);
+			path = stores;
+			sourceTree = "<group>";
+		};
+		FC2BEA6A2717122500AAF38B /* components */ = {
+			isa = PBXGroup;
+			children = (
+				FC2BEA8327171A0500AAF38B /* AppLoading.swift */,
+				FC2BEA9927171EA100AAF38B /* AppButtonPrimary.swift */,
+				FC2BEA9B27171EAB00AAF38B /* AppButtonSecondary.swift */,
+				FC2BEA9D271725B800AAF38B /* AppTextFieldBase.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		FC2BEA6C2717124900AAF38B /* views */ = {
+			isa = PBXGroup;
+			children = (
+				FC2BEA6A2717122500AAF38B /* components */,
+				FC2BEA8C27171B9700AAF38B /* screens */,
+				FC2BEA8B27171B9100AAF38B /* navigations */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		FC2BEA8B27171B9100AAF38B /* navigations */ = {
+			isa = PBXGroup;
+			children = (
+				FC2BEA8527171A1F00AAF38B /* AuthView.swift */,
+				FC2BEA8727171A3900AAF38B /* TabView.swift */,
+			);
+			path = navigations;
+			sourceTree = "<group>";
+		};
+		FC2BEA8C27171B9700AAF38B /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				FC2BEA9727171E4200AAF38B /* AuthHomeView.swift */,
+				FC2BEA9327171E3500AAF38B /* AuthLoginView.swift */,
+				FC2BEA9F27172C8B00AAF38B /* AuthLoginViewModel.swift */,
+				FC2BEA9527171E3B00AAF38B /* AuthRegisterView.swift */,
+				FC2BEAA127172C9500AAF38B /* AuthRegisterViewModel.swift */,
+			);
+			path = screens;
+			sourceTree = "<group>";
+		};
+		FC2BEA8E27171BC300AAF38B /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				FC2BEA672717121000AAF38B /* networking */,
+				FC2BEA662717120900AAF38B /* extensions */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +276,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC2BEA5B271711C800AAF38B /* ContentView.swift in Sources */,
+				FC2BEA822717177400AAF38B /* UserAPIService.swift in Sources */,
+				FC2BEA702717129200AAF38B /* Color+Ext.swift in Sources */,
+				FC2BEAA027172C8B00AAF38B /* AuthLoginViewModel.swift in Sources */,
+				FC2BEA9C27171EAB00AAF38B /* AppButtonSecondary.swift in Sources */,
 				FC2BEA59271711C800AAF38B /* ihtisap_iosApp.swift in Sources */,
+				FC2BEA722717129900AAF38B /* String+Ext.swift in Sources */,
+				FC2BEA7C2717137400AAF38B /* Transaction.swift in Sources */,
+				FC2BEA9A27171EA100AAF38B /* AppButtonPrimary.swift in Sources */,
+				FC2BEA782717136800AAF38B /* User.swift in Sources */,
+				FC2BEA9827171E4200AAF38B /* AuthHomeView.swift in Sources */,
+				FC2BEA9E271725B800AAF38B /* AppTextFieldBase.swift in Sources */,
+				FC2BEA9627171E3B00AAF38B /* AuthRegisterView.swift in Sources */,
+				FC2BEA802717152200AAF38B /* UserStore.swift in Sources */,
+				FC2BEA8427171A0500AAF38B /* AppLoading.swift in Sources */,
+				FC2BEA7A2717136E00AAF38B /* Account.swift in Sources */,
+				FC2BEA9427171E3500AAF38B /* AuthLoginView.swift in Sources */,
+				FC2BEAA227172C9500AAF38B /* AuthRegisterViewModel.swift in Sources */,
+				FC2BEA8827171A3900AAF38B /* TabView.swift in Sources */,
+				FC2BEA742717132200AAF38B /* APIService.swift in Sources */,
+				FC2BEA8627171A1F00AAF38B /* AuthView.swift in Sources */,
+				FC2BEA7E2717137B00AAF38B /* Statistic.swift in Sources */,
+				FC2BEA6E2717128C00AAF38B /* DateFormatter+Ext.swift in Sources */,
+				FC2BEA762717134100AAF38B /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +437,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +467,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

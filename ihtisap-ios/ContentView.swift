@@ -8,9 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var userStore = UserStore()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Group {
+            if userStore.isLoading {
+                AppLoading()
+            } else if userStore.user == nil || userStore.authToken == nil {
+                AuthView()
+            } else {
+                TabView()
+            }
+        }
+        .onAppear(perform: {
+            Task {
+                await userStore.auth()
+            }
+        })
+        .environmentObject(userStore)
     }
 }
 
