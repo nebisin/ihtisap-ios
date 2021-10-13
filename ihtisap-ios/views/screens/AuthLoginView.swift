@@ -11,6 +11,7 @@ struct AuthLoginView: View {
     @Binding var selectedView: String
     
     @StateObject var vm = AuthLoginViewModel()
+    @EnvironmentObject var userStore: UserStore
     
     var body: some View {
         VStack (alignment: .leading) {
@@ -75,12 +76,17 @@ struct AuthLoginView: View {
                         return
                     }
                     
-                    print(token)
+                    DispatchQueue.main.async {
+                        userStore.authToken = token
+                    }
+                    
+                    await userStore.auth(token: token)
                 }
             } label: {
-                AppButtonPrimary(label: "log in")
+                AppButtonPrimary(label: "log in", isLoading: vm.isLoading)
                     .padding(.top)
             }
+            .disabled(vm.isLoading)
         }
         .padding()
     }

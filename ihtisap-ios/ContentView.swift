@@ -21,8 +21,12 @@ struct ContentView: View {
             }
         }
         .onAppear(perform: {
+            guard let token = userStore.authToken else {
+                return
+            }
+            
             Task {
-                await userStore.auth()
+                await userStore.auth(token: token)
             }
         })
         .environmentObject(userStore)

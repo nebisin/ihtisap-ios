@@ -26,6 +26,7 @@ class AuthLoginViewModel: ObservableObject {
         if let error = error {
             DispatchQueue.main.async {
                 self.errorMessage = error.localizedDescription
+                self.isLoading = false
             }
             return nil
         }
@@ -33,11 +34,13 @@ class AuthLoginViewModel: ObservableObject {
         guard let data = data else {
             DispatchQueue.main.async {
                 self.errorMessage = "something went wrong"
+                self.isLoading = false
             }
             return nil
         }
         
         DispatchQueue.main.async {
+            self.isLoading = false
             self.errorMessage = nil
             self.validationError = nil
         }

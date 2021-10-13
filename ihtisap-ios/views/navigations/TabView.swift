@@ -8,8 +8,14 @@
 import SwiftUI
 
 struct TabView: View {
+    @EnvironmentObject var userStore: UserStore
     var body: some View {
-        Text("Tab View")
+        VStack {
+            Text("Tab View")
+            Button("Log out") {
+                userStore.logout()
+            }
+        }
     }
 }
 
