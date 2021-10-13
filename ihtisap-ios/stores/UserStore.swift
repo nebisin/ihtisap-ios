@@ -13,14 +13,16 @@ class UserStore: ObservableObject {
     @Published var user: User? = nil
     
     init() {
-        if let token = authToken {
-            Task {
-                await auth(token: token)
-            }
+        Task {
+            await auth()
         }
     }
     
-    func auth(token: String) async -> Void {
+    func auth() async -> Void {
+        guard let token = authToken else {
+            return
+        }
+
         if let _ = user {
             return
         }

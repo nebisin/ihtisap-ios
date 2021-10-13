@@ -79,8 +79,6 @@ struct AuthLoginView: View {
                     DispatchQueue.main.async {
                         userStore.authToken = token
                     }
-                    
-                    await userStore.auth(token: token)
                 }
             } label: {
                 AppButtonPrimary(label: "log in", isLoading: vm.isLoading)

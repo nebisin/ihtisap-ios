@@ -20,13 +20,14 @@ struct ContentView: View {
                 TabView()
             }
         }
-        .onAppear(perform: {
-            guard let token = userStore.authToken else {
-                return
-            }
-            
+        .onChange(of: userStore.authToken, perform: { newValue in
             Task {
-                await userStore.auth(token: token)
+                await userStore.auth()
+            }
+        })
+        .onAppear(perform: {
+            Task {
+                await userStore.auth()
             }
         })
         .environmentObject(userStore)
