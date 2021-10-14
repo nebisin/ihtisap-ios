@@ -94,8 +94,8 @@ struct AuthRegisterView: View {
                 }
             } label: {
                 AppButtonPrimary(label: "register", isLoading: vm.isLoading)
-                    .padding(.top)
             }
+            .padding(.top)
             .disabled(vm.isLoading)
             
         }

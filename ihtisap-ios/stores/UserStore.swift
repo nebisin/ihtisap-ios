@@ -18,6 +18,11 @@ class UserStore: ObservableObject {
         }
     }
     
+    init(user: User) {
+        self.user = user
+        self.authToken = "12345"
+    }
+    
     func auth() async -> Void {
         guard let token = authToken else {
             return
@@ -27,7 +32,9 @@ class UserStore: ObservableObject {
             return
         }
         
-        isLoading = true
+        DispatchQueue.main.async {
+            self.isLoading = true
+        }
         
         let payload = AuthToken(authenticationToken: token)
         
@@ -58,5 +65,9 @@ class UserStore: ObservableObject {
     
     func logout() {
         authToken = nil
+    }
+    
+    static func mockData() -> UserStore {
+        return UserStore(user: User(id: 1, name: "deneme", email: "deneme@deneme.com", isActivated: true, createdAt: .now, version: 1))
     }
 }

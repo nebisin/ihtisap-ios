@@ -23,8 +23,8 @@
 		FC2BEA802717152200AAF38B /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEA7F2717152200AAF38B /* UserStore.swift */; };
 		FC2BEA822717177400AAF38B /* UserAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEA812717177400AAF38B /* UserAPIService.swift */; };
 		FC2BEA8427171A0500AAF38B /* AppLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEA8327171A0500AAF38B /* AppLoading.swift */; };
-		FC2BEA8627171A1F00AAF38B /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEA8527171A1F00AAF38B /* AuthView.swift */; };
-		FC2BEA8827171A3900AAF38B /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEA8727171A3900AAF38B /* TabView.swift */; };
+		FC2BEA8627171A1F00AAF38B /* TheAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEA8527171A1F00AAF38B /* TheAuthView.swift */; };
+		FC2BEA8827171A3900AAF38B /* TheTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEA8727171A3900AAF38B /* TheTabView.swift */; };
 		FC2BEA9427171E3500AAF38B /* AuthLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEA9327171E3500AAF38B /* AuthLoginView.swift */; };
 		FC2BEA9627171E3B00AAF38B /* AuthRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEA9527171E3B00AAF38B /* AuthRegisterView.swift */; };
 		FC2BEA9827171E4200AAF38B /* AuthHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEA9727171E4200AAF38B /* AuthHomeView.swift */; };
@@ -33,6 +33,18 @@
 		FC2BEA9E271725B800AAF38B /* AppTextFieldBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEA9D271725B800AAF38B /* AppTextFieldBase.swift */; };
 		FC2BEAA027172C8B00AAF38B /* AuthLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEA9F27172C8B00AAF38B /* AuthLoginViewModel.swift */; };
 		FC2BEAA227172C9500AAF38B /* AuthRegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEAA127172C9500AAF38B /* AuthRegisterViewModel.swift */; };
+		FC2BEAA42717777500AAF38B /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEAA32717777500AAF38B /* DashboardView.swift */; };
+		FC2BEAA62717779100AAF38B /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEAA52717779100AAF38B /* SearchView.swift */; };
+		FC2BEAA8271777AF00AAF38B /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEAA7271777AF00AAF38B /* UserView.swift */; };
+		FC2BEAAA2718121F00AAF38B /* DashboardNoAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEAA92718121F00AAF38B /* DashboardNoAccount.swift */; };
+		FC2BEAAC2718128700AAF38B /* AccountStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEAAB2718128700AAF38B /* AccountStore.swift */; };
+		FC2BEAAE2718132500AAF38B /* AccountAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEAAD2718132500AAF38B /* AccountAPIService.swift */; };
+		FC2BEAB1271819FE00AAF38B /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEAB0271819FE00AAF38B /* CreateAccountView.swift */; };
+		FC2BEAB327181A9C00AAF38B /* CreateTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEAB227181A9C00AAF38B /* CreateTransaction.swift */; };
+		FC2BEAB52718495A00AAF38B /* CreateAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEAB42718495A00AAF38B /* CreateAccountViewModel.swift */; };
+		FC2BEAB72718AA8600AAF38B /* UserAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEAB62718AA8600AAF38B /* UserAccountView.swift */; };
+		FC2BEAB92718AC3C00AAF38B /* DashboardAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEAB82718AC3C00AAF38B /* DashboardAccount.swift */; };
+		FC2BEABB2718ACD900AAF38B /* DashboardAccountPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEABA2718ACD900AAF38B /* DashboardAccountPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,8 +65,8 @@
 		FC2BEA7F2717152200AAF38B /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
 		FC2BEA812717177400AAF38B /* UserAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPIService.swift; sourceTree = "<group>"; };
 		FC2BEA8327171A0500AAF38B /* AppLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLoading.swift; sourceTree = "<group>"; };
-		FC2BEA8527171A1F00AAF38B /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
-		FC2BEA8727171A3900AAF38B /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		FC2BEA8527171A1F00AAF38B /* TheAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheAuthView.swift; sourceTree = "<group>"; };
+		FC2BEA8727171A3900AAF38B /* TheTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheTabView.swift; sourceTree = "<group>"; };
 		FC2BEA9327171E3500AAF38B /* AuthLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthLoginView.swift; sourceTree = "<group>"; };
 		FC2BEA9527171E3B00AAF38B /* AuthRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRegisterView.swift; sourceTree = "<group>"; };
 		FC2BEA9727171E4200AAF38B /* AuthHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHomeView.swift; sourceTree = "<group>"; };
@@ -63,6 +75,18 @@
 		FC2BEA9D271725B800AAF38B /* AppTextFieldBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTextFieldBase.swift; sourceTree = "<group>"; };
 		FC2BEA9F27172C8B00AAF38B /* AuthLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthLoginViewModel.swift; sourceTree = "<group>"; };
 		FC2BEAA127172C9500AAF38B /* AuthRegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRegisterViewModel.swift; sourceTree = "<group>"; };
+		FC2BEAA32717777500AAF38B /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		FC2BEAA52717779100AAF38B /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		FC2BEAA7271777AF00AAF38B /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		FC2BEAA92718121F00AAF38B /* DashboardNoAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardNoAccount.swift; sourceTree = "<group>"; };
+		FC2BEAAB2718128700AAF38B /* AccountStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountStore.swift; sourceTree = "<group>"; };
+		FC2BEAAD2718132500AAF38B /* AccountAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountAPIService.swift; sourceTree = "<group>"; };
+		FC2BEAB0271819FE00AAF38B /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
+		FC2BEAB227181A9C00AAF38B /* CreateTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTransaction.swift; sourceTree = "<group>"; };
+		FC2BEAB42718495A00AAF38B /* CreateAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewModel.swift; sourceTree = "<group>"; };
+		FC2BEAB62718AA8600AAF38B /* UserAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountView.swift; sourceTree = "<group>"; };
+		FC2BEAB82718AC3C00AAF38B /* DashboardAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardAccount.swift; sourceTree = "<group>"; };
+		FC2BEABA2718ACD900AAF38B /* DashboardAccountPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardAccountPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +155,7 @@
 				FC2BEA732717132200AAF38B /* APIService.swift */,
 				FC2BEA752717134100AAF38B /* APIError.swift */,
 				FC2BEA812717177400AAF38B /* UserAPIService.swift */,
+				FC2BEAAD2718132500AAF38B /* AccountAPIService.swift */,
 			);
 			path = networking;
 			sourceTree = "<group>";
@@ -150,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				FC2BEA7F2717152200AAF38B /* UserStore.swift */,
+				FC2BEAAB2718128700AAF38B /* AccountStore.swift */,
 			);
 			path = stores;
 			sourceTree = "<group>";
@@ -161,6 +187,9 @@
 				FC2BEA9927171EA100AAF38B /* AppButtonPrimary.swift */,
 				FC2BEA9B27171EAB00AAF38B /* AppButtonSecondary.swift */,
 				FC2BEA9D271725B800AAF38B /* AppTextFieldBase.swift */,
+				FC2BEAA92718121F00AAF38B /* DashboardNoAccount.swift */,
+				FC2BEAB82718AC3C00AAF38B /* DashboardAccount.swift */,
+				FC2BEABA2718ACD900AAF38B /* DashboardAccountPicker.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -168,6 +197,7 @@
 		FC2BEA6C2717124900AAF38B /* views */ = {
 			isa = PBXGroup;
 			children = (
+				FC2BEAAF271819EB00AAF38B /* sheets */,
 				FC2BEA6A2717122500AAF38B /* components */,
 				FC2BEA8C27171B9700AAF38B /* screens */,
 				FC2BEA8B27171B9100AAF38B /* navigations */,
@@ -178,8 +208,8 @@
 		FC2BEA8B27171B9100AAF38B /* navigations */ = {
 			isa = PBXGroup;
 			children = (
-				FC2BEA8527171A1F00AAF38B /* AuthView.swift */,
-				FC2BEA8727171A3900AAF38B /* TabView.swift */,
+				FC2BEA8527171A1F00AAF38B /* TheAuthView.swift */,
+				FC2BEA8727171A3900AAF38B /* TheTabView.swift */,
 			);
 			path = navigations;
 			sourceTree = "<group>";
@@ -192,6 +222,10 @@
 				FC2BEA9F27172C8B00AAF38B /* AuthLoginViewModel.swift */,
 				FC2BEA9527171E3B00AAF38B /* AuthRegisterView.swift */,
 				FC2BEAA127172C9500AAF38B /* AuthRegisterViewModel.swift */,
+				FC2BEAA32717777500AAF38B /* DashboardView.swift */,
+				FC2BEAA52717779100AAF38B /* SearchView.swift */,
+				FC2BEAA7271777AF00AAF38B /* UserView.swift */,
+				FC2BEAB62718AA8600AAF38B /* UserAccountView.swift */,
 			);
 			path = screens;
 			sourceTree = "<group>";
@@ -203,6 +237,16 @@
 				FC2BEA662717120900AAF38B /* extensions */,
 			);
 			path = utils;
+			sourceTree = "<group>";
+		};
+		FC2BEAAF271819EB00AAF38B /* sheets */ = {
+			isa = PBXGroup;
+			children = (
+				FC2BEAB0271819FE00AAF38B /* CreateAccountView.swift */,
+				FC2BEAB42718495A00AAF38B /* CreateAccountViewModel.swift */,
+				FC2BEAB227181A9C00AAF38B /* CreateTransaction.swift */,
+			);
+			path = sheets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,11 +321,19 @@
 			files = (
 				FC2BEA5B271711C800AAF38B /* ContentView.swift in Sources */,
 				FC2BEA822717177400AAF38B /* UserAPIService.swift in Sources */,
+				FC2BEAB1271819FE00AAF38B /* CreateAccountView.swift in Sources */,
 				FC2BEA702717129200AAF38B /* Color+Ext.swift in Sources */,
 				FC2BEAA027172C8B00AAF38B /* AuthLoginViewModel.swift in Sources */,
+				FC2BEAB92718AC3C00AAF38B /* DashboardAccount.swift in Sources */,
 				FC2BEA9C27171EAB00AAF38B /* AppButtonSecondary.swift in Sources */,
 				FC2BEA59271711C800AAF38B /* ihtisap_iosApp.swift in Sources */,
+				FC2BEAB52718495A00AAF38B /* CreateAccountViewModel.swift in Sources */,
+				FC2BEAAE2718132500AAF38B /* AccountAPIService.swift in Sources */,
 				FC2BEA722717129900AAF38B /* String+Ext.swift in Sources */,
+				FC2BEAA42717777500AAF38B /* DashboardView.swift in Sources */,
+				FC2BEAA62717779100AAF38B /* SearchView.swift in Sources */,
+				FC2BEAAA2718121F00AAF38B /* DashboardNoAccount.swift in Sources */,
+				FC2BEAB327181A9C00AAF38B /* CreateTransaction.swift in Sources */,
 				FC2BEA7C2717137400AAF38B /* Transaction.swift in Sources */,
 				FC2BEA9A27171EA100AAF38B /* AppButtonPrimary.swift in Sources */,
 				FC2BEA782717136800AAF38B /* User.swift in Sources */,
@@ -291,13 +343,17 @@
 				FC2BEA802717152200AAF38B /* UserStore.swift in Sources */,
 				FC2BEA8427171A0500AAF38B /* AppLoading.swift in Sources */,
 				FC2BEA7A2717136E00AAF38B /* Account.swift in Sources */,
+				FC2BEAB72718AA8600AAF38B /* UserAccountView.swift in Sources */,
 				FC2BEA9427171E3500AAF38B /* AuthLoginView.swift in Sources */,
 				FC2BEAA227172C9500AAF38B /* AuthRegisterViewModel.swift in Sources */,
-				FC2BEA8827171A3900AAF38B /* TabView.swift in Sources */,
+				FC2BEA8827171A3900AAF38B /* TheTabView.swift in Sources */,
 				FC2BEA742717132200AAF38B /* APIService.swift in Sources */,
-				FC2BEA8627171A1F00AAF38B /* AuthView.swift in Sources */,
+				FC2BEA8627171A1F00AAF38B /* TheAuthView.swift in Sources */,
 				FC2BEA7E2717137B00AAF38B /* Statistic.swift in Sources */,
 				FC2BEA6E2717128C00AAF38B /* DateFormatter+Ext.swift in Sources */,
+				FC2BEAA8271777AF00AAF38B /* UserView.swift in Sources */,
+				FC2BEAAC2718128700AAF38B /* AccountStore.swift in Sources */,
+				FC2BEABB2718ACD900AAF38B /* DashboardAccountPicker.swift in Sources */,
 				FC2BEA762717134100AAF38B /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

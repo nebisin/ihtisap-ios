@@ -15,9 +15,9 @@ struct ContentView: View {
             if userStore.isLoading {
                 AppLoading()
             } else if userStore.user == nil || userStore.authToken == nil {
-                AuthView()
+                TheAuthView()
             } else {
-                TabView()
+                TheTabView()
             }
         }
         .onChange(of: userStore.authToken, perform: { newValue in

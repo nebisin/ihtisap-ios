@@ -14,7 +14,7 @@ struct Account: Identifiable, Codable {
     let description: String?
     let totalIncome: Double
     let totalExpense: Double
-    let currency: String
+    let currency: Currency
     let createdAt: Date
     let version: Int
 }
@@ -30,6 +30,15 @@ struct AccountsResponse: Codable {
 struct CreateAccountRequest: Codable {
     var title: String = ""
     var description: String = ""
-    var currency: String = "USD"
+    var currency: Currency = .USD
     var initialBalance: Double = 0
+}
+
+enum Currency: String, CaseIterable, Identifiable, Codable {
+    case USD
+    case TRY
+    case EUR
+    case AUD
+    
+    var id: String {self.rawValue}
 }

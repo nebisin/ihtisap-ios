@@ -82,8 +82,8 @@ struct AuthLoginView: View {
                 }
             } label: {
                 AppButtonPrimary(label: "log in", isLoading: vm.isLoading)
-                    .padding(.top)
             }
+            .padding(.top)
             .disabled(vm.isLoading)
         }
         .padding()
