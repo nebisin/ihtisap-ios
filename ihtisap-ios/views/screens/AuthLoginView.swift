@@ -44,7 +44,7 @@ struct AuthLoginView: View {
             
             VStack (alignment: .leading) {
                 Text("Email")
-                if let error = vm.validationError?.errors["email"] {
+                if let error = vm.validationError?.errors["email"], !error.isEmpty {
                     Text(error)
                         .font(.footnote)
                         .foregroundColor(.red)
@@ -59,7 +59,7 @@ struct AuthLoginView: View {
             
             VStack (alignment: .leading) {
                 Text("Password")
-                if let error = vm.validationError?.errors["password"] {
+                if let error = vm.validationError?.errors["password"], !error.isEmpty {
                     Text(error)
                         .font(.footnote)
                         .foregroundColor(.red)

@@ -8,12 +8,29 @@
 import SwiftUI
 
 struct DashboardAccount: View {
+    @EnvironmentObject var userStore: UserStore
     @EnvironmentObject var accountStore: AccountStore
     
+    @StateObject var transactionStore = TransactionStore()
+    
     @State private var selectedAccount = 0
+    @State private var sheetPresented = false
     
     var body: some View {
-        Text("Dashboard yes account view")
+        DashboardAccountTransactionList(store: transactionStore)
+            .onAppear(perform: {
+                guard let token = userStore.authToken else {
+                    return
+                }
+                
+                guard let accountID = accountStore.selectedAccount?.id else {
+                    return
+                }
+
+                Task {
+                    await transactionStore.fetchLastTransactions(token: token, accountID: accountID)
+                }
+            })
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
@@ -25,7 +42,7 @@ struct DashboardAccount: View {
                 
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
-                        
+                        sheetPresented.toggle()
                     } label: {
                         Image(systemName: "plus.circle")
                             .font(.title3)
@@ -34,13 +51,27 @@ struct DashboardAccount: View {
                     }
                 }
             }
+            .sheet(isPresented: $sheetPresented) {
+                CreateTransactionView(tsStore: transactionStore)
+            }
     }
     
     func changeAccount() {
         accountStore.selectedAccount = accountStore.allAccounts.first(where: { account in
             return account.id == selectedAccount
         })
-
+        
+        guard let token = userStore.authToken else {
+            return
+        }
+        
+        guard let accountID = accountStore.selectedAccount?.id else {
+            return
+        }
+        
+        Task {
+            await transactionStore.fetchLastTransactions(token: token, accountID: accountID)
+        }
     }
 }
 

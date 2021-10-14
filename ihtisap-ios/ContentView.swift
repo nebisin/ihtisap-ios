@@ -14,7 +14,7 @@ struct ContentView: View {
         Group {
             if userStore.isLoading {
                 AppLoading()
-            } else if userStore.user == nil || userStore.authToken == nil {
+            } else if userStore.authToken == nil {
                 TheAuthView()
             } else {
                 TheTabView()

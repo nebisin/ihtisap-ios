@@ -22,7 +22,7 @@ struct CreateAccountView: View {
                 VStack (alignment: .leading) {
                     TextField("Title", text: $vm.createAccountRequest.title)
                     
-                    if let error = vm.validationError?.errors["title"] {
+                    if let error = vm.validationError?.errors["title"], !error.isEmpty {
                         Text(error)
                             .font(.footnote)
                             .foregroundColor(.red)

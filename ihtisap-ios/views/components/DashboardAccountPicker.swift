@@ -25,6 +25,7 @@ struct DashboardAccountPicker: View {
                 }
             }
             .padding(.horizontal)
+            
         }
     }
 }

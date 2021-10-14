@@ -40,11 +40,15 @@
 		FC2BEAAC2718128700AAF38B /* AccountStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEAAB2718128700AAF38B /* AccountStore.swift */; };
 		FC2BEAAE2718132500AAF38B /* AccountAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEAAD2718132500AAF38B /* AccountAPIService.swift */; };
 		FC2BEAB1271819FE00AAF38B /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEAB0271819FE00AAF38B /* CreateAccountView.swift */; };
-		FC2BEAB327181A9C00AAF38B /* CreateTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEAB227181A9C00AAF38B /* CreateTransaction.swift */; };
+		FC2BEAB327181A9C00AAF38B /* CreateTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEAB227181A9C00AAF38B /* CreateTransactionView.swift */; };
 		FC2BEAB52718495A00AAF38B /* CreateAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEAB42718495A00AAF38B /* CreateAccountViewModel.swift */; };
 		FC2BEAB72718AA8600AAF38B /* UserAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEAB62718AA8600AAF38B /* UserAccountView.swift */; };
 		FC2BEAB92718AC3C00AAF38B /* DashboardAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEAB82718AC3C00AAF38B /* DashboardAccount.swift */; };
 		FC2BEABB2718ACD900AAF38B /* DashboardAccountPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEABA2718ACD900AAF38B /* DashboardAccountPicker.swift */; };
+		FC2BEABD2718B23C00AAF38B /* TransactionAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEABC2718B23C00AAF38B /* TransactionAPIService.swift */; };
+		FC2BEABF2718CE6A00AAF38B /* TransactionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEABE2718CE6A00AAF38B /* TransactionStore.swift */; };
+		FC2BEAC12718CFB900AAF38B /* DashboardAccountTransactionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEAC02718CFB900AAF38B /* DashboardAccountTransactionList.swift */; };
+		FC2BEAC32718D20C00AAF38B /* CreateTransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEAC22718D20C00AAF38B /* CreateTransactionViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,11 +86,15 @@
 		FC2BEAAB2718128700AAF38B /* AccountStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountStore.swift; sourceTree = "<group>"; };
 		FC2BEAAD2718132500AAF38B /* AccountAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountAPIService.swift; sourceTree = "<group>"; };
 		FC2BEAB0271819FE00AAF38B /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
-		FC2BEAB227181A9C00AAF38B /* CreateTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTransaction.swift; sourceTree = "<group>"; };
+		FC2BEAB227181A9C00AAF38B /* CreateTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTransactionView.swift; sourceTree = "<group>"; };
 		FC2BEAB42718495A00AAF38B /* CreateAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewModel.swift; sourceTree = "<group>"; };
 		FC2BEAB62718AA8600AAF38B /* UserAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountView.swift; sourceTree = "<group>"; };
 		FC2BEAB82718AC3C00AAF38B /* DashboardAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardAccount.swift; sourceTree = "<group>"; };
 		FC2BEABA2718ACD900AAF38B /* DashboardAccountPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardAccountPicker.swift; sourceTree = "<group>"; };
+		FC2BEABC2718B23C00AAF38B /* TransactionAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionAPIService.swift; sourceTree = "<group>"; };
+		FC2BEABE2718CE6A00AAF38B /* TransactionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionStore.swift; sourceTree = "<group>"; };
+		FC2BEAC02718CFB900AAF38B /* DashboardAccountTransactionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardAccountTransactionList.swift; sourceTree = "<group>"; };
+		FC2BEAC22718D20C00AAF38B /* CreateTransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTransactionViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +164,7 @@
 				FC2BEA752717134100AAF38B /* APIError.swift */,
 				FC2BEA812717177400AAF38B /* UserAPIService.swift */,
 				FC2BEAAD2718132500AAF38B /* AccountAPIService.swift */,
+				FC2BEABC2718B23C00AAF38B /* TransactionAPIService.swift */,
 			);
 			path = networking;
 			sourceTree = "<group>";
@@ -176,6 +185,7 @@
 			children = (
 				FC2BEA7F2717152200AAF38B /* UserStore.swift */,
 				FC2BEAAB2718128700AAF38B /* AccountStore.swift */,
+				FC2BEABE2718CE6A00AAF38B /* TransactionStore.swift */,
 			);
 			path = stores;
 			sourceTree = "<group>";
@@ -190,6 +200,7 @@
 				FC2BEAA92718121F00AAF38B /* DashboardNoAccount.swift */,
 				FC2BEAB82718AC3C00AAF38B /* DashboardAccount.swift */,
 				FC2BEABA2718ACD900AAF38B /* DashboardAccountPicker.swift */,
+				FC2BEAC02718CFB900AAF38B /* DashboardAccountTransactionList.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -244,7 +255,8 @@
 			children = (
 				FC2BEAB0271819FE00AAF38B /* CreateAccountView.swift */,
 				FC2BEAB42718495A00AAF38B /* CreateAccountViewModel.swift */,
-				FC2BEAB227181A9C00AAF38B /* CreateTransaction.swift */,
+				FC2BEAB227181A9C00AAF38B /* CreateTransactionView.swift */,
+				FC2BEAC22718D20C00AAF38B /* CreateTransactionViewModel.swift */,
 			);
 			path = sheets;
 			sourceTree = "<group>";
@@ -329,19 +341,23 @@
 				FC2BEA59271711C800AAF38B /* ihtisap_iosApp.swift in Sources */,
 				FC2BEAB52718495A00AAF38B /* CreateAccountViewModel.swift in Sources */,
 				FC2BEAAE2718132500AAF38B /* AccountAPIService.swift in Sources */,
+				FC2BEAC12718CFB900AAF38B /* DashboardAccountTransactionList.swift in Sources */,
 				FC2BEA722717129900AAF38B /* String+Ext.swift in Sources */,
 				FC2BEAA42717777500AAF38B /* DashboardView.swift in Sources */,
 				FC2BEAA62717779100AAF38B /* SearchView.swift in Sources */,
 				FC2BEAAA2718121F00AAF38B /* DashboardNoAccount.swift in Sources */,
-				FC2BEAB327181A9C00AAF38B /* CreateTransaction.swift in Sources */,
+				FC2BEAB327181A9C00AAF38B /* CreateTransactionView.swift in Sources */,
 				FC2BEA7C2717137400AAF38B /* Transaction.swift in Sources */,
+				FC2BEABD2718B23C00AAF38B /* TransactionAPIService.swift in Sources */,
 				FC2BEA9A27171EA100AAF38B /* AppButtonPrimary.swift in Sources */,
 				FC2BEA782717136800AAF38B /* User.swift in Sources */,
 				FC2BEA9827171E4200AAF38B /* AuthHomeView.swift in Sources */,
 				FC2BEA9E271725B800AAF38B /* AppTextFieldBase.swift in Sources */,
 				FC2BEA9627171E3B00AAF38B /* AuthRegisterView.swift in Sources */,
+				FC2BEABF2718CE6A00AAF38B /* TransactionStore.swift in Sources */,
 				FC2BEA802717152200AAF38B /* UserStore.swift in Sources */,
 				FC2BEA8427171A0500AAF38B /* AppLoading.swift in Sources */,
+				FC2BEAC32718D20C00AAF38B /* CreateTransactionViewModel.swift in Sources */,
 				FC2BEA7A2717136E00AAF38B /* Account.swift in Sources */,
 				FC2BEAB72718AA8600AAF38B /* UserAccountView.swift in Sources */,
 				FC2BEA9427171E3500AAF38B /* AuthLoginView.swift in Sources */,

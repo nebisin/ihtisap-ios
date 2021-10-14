@@ -1,5 +1,5 @@
 //
-//  AccountStore.swift
+//  TransactionStore.swift
 //  ihtisap-ios
 //
 //  Created by Salim Bozok on 14.10.2021.
@@ -7,16 +7,15 @@
 
 import Foundation
 
-class AccountStore: ObservableObject {
+class TransactionStore: ObservableObject {
     @Published var isLoading = false
-    @Published var allAccounts: [Account] = []
-    @Published var selectedAccount: Account? = nil
+    @Published var lastTransactions: [Transaction] = []
     @Published var errorMessage: String? = nil
     
-    func fetchAccounts(token: String) async -> Void {
+    func fetchLastTransactions(token: String, accountID: Int) async -> Void {
         isLoading = true
-        
-        let (data, error) = await AccountAPIService.shared.listAccounts(authToken: token)
+                
+        let (data, error) = await TransactionAPIService.shared.listTransactions(authToken: token, accountID: accountID)
         
         if let error = error {
             DispatchQueue.main.async {
@@ -25,8 +24,9 @@ class AccountStore: ObservableObject {
             }
             return
         }
-        
+                
         guard let data = data else {
+            print("no data")
             DispatchQueue.main.async {
                 self.errorMessage = "something went wrong"
                 self.isLoading = false
@@ -34,13 +34,13 @@ class AccountStore: ObservableObject {
             return
         }
         
+        print(data)
+        
         DispatchQueue.main.async {
+            self.lastTransactions = data.transactions
             self.isLoading = false
             self.errorMessage = nil
-            if !data.accounts.isEmpty {
-                self.selectedAccount = data.accounts[0]
-            }
-            self.allAccounts = data.accounts
         }
+
     }
 }
