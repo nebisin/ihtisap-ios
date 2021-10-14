@@ -26,6 +26,10 @@ struct DashboardAccount: View {
                 guard let accountID = accountStore.selectedAccount?.id else {
                     return
                 }
+                
+                if !transactionStore.lastTransactions.isEmpty {
+                    return
+                }
 
                 Task {
                     await transactionStore.fetchLastTransactions(token: token, accountID: accountID)

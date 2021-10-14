@@ -26,16 +26,13 @@ class TransactionStore: ObservableObject {
         }
                 
         guard let data = data else {
-            print("no data")
             DispatchQueue.main.async {
                 self.errorMessage = "something went wrong"
                 self.isLoading = false
             }
             return
         }
-        
-        print(data)
-        
+                
         DispatchQueue.main.async {
             self.lastTransactions = data.transactions
             self.isLoading = false
