@@ -54,9 +54,7 @@ final class TransactionAPIService {
         
         let encoder = JSONEncoder()
         encoder.dateEncodingStrategy = .formatted(.RFC3399)
-        
-        print(payload)
-        
+                
         guard let encoded = try? encoder.encode(payload) else {
             return (nil, .unableToComplete)
         }
@@ -66,7 +64,6 @@ final class TransactionAPIService {
         request.setValue("Bearer \(authToken)", forHTTPHeaderField: "Authorization")
         request.httpMethod = "POST"
         request.httpBody = encoded
-        print(encoded)
         
         let (data, error) = await APIService.shared.http(TransactionResponse.self, request: request)
                 

@@ -12,7 +12,7 @@ struct DashboardAccountPicker: View {
     let accounts: [Account]
     
     var body: some View {
-        ZStack (alignment: .leading) {
+        ZStack {
             Color.gray
                 .opacity(0.2)
                 .frame(width: 160, height: 35)

@@ -77,7 +77,19 @@ struct CreateTransactionView: View {
                             return
                         }
                         
-                        tsStore.lastTransactions.append(ts)
+                        tsStore.lastTransactions.insert(ts, at: 0)
+                        
+                        let index = accountStore.allAccounts.firstIndex { account in
+                            account.id == accountStore.selectedAccount!.id
+                        }
+                        
+                        if ts.type == .expense {
+                            accountStore.selectedAccount!.totalExpense += ts.amount
+                            accountStore.allAccounts[index!].totalExpense += ts.amount
+                        } else {
+                            accountStore.selectedAccount!.totalIncome += ts.amount
+                            accountStore.allAccounts[index!].totalIncome += ts.amount
+                        }
                         
                         presentationMode.wrappedValue.dismiss()
                     }

@@ -25,11 +25,6 @@ struct ContentView: View {
                 await userStore.auth()
             }
         })
-        .onAppear(perform: {
-            Task {
-                await userStore.auth()
-            }
-        })
         .environmentObject(userStore)
     }
 }

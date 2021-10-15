@@ -8,15 +8,15 @@
 import Foundation
 
 struct Account: Identifiable, Codable {
-    let id: Int
-    let ownerID: Int
-    let title: String
-    let description: String?
-    let totalIncome: Double
-    let totalExpense: Double
-    let currency: Currency
-    let createdAt: Date
-    let version: Int
+    var id: Int
+    var ownerID: Int
+    var title: String
+    var description: String?
+    var totalIncome: Double
+    var totalExpense: Double
+    var currency: Currency
+    var createdAt: Date
+    var version: Int
 }
 
 struct AccountResponse: Codable {

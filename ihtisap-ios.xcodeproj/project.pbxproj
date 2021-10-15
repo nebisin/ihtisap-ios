@@ -49,6 +49,8 @@
 		FC2BEABF2718CE6A00AAF38B /* TransactionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEABE2718CE6A00AAF38B /* TransactionStore.swift */; };
 		FC2BEAC12718CFB900AAF38B /* DashboardAccountTransactionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEAC02718CFB900AAF38B /* DashboardAccountTransactionList.swift */; };
 		FC2BEAC32718D20C00AAF38B /* CreateTransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEAC22718D20C00AAF38B /* CreateTransactionViewModel.swift */; };
+		FCF6A3072719F6A5009B95DD /* DashboardAccountTransactionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF6A3062719F6A5009B95DD /* DashboardAccountTransactionItem.swift */; };
+		FCF6A309271A314F009B95DD /* DashboardAccountStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF6A308271A314F009B95DD /* DashboardAccountStats.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +97,8 @@
 		FC2BEABE2718CE6A00AAF38B /* TransactionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionStore.swift; sourceTree = "<group>"; };
 		FC2BEAC02718CFB900AAF38B /* DashboardAccountTransactionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardAccountTransactionList.swift; sourceTree = "<group>"; };
 		FC2BEAC22718D20C00AAF38B /* CreateTransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTransactionViewModel.swift; sourceTree = "<group>"; };
+		FCF6A3062719F6A5009B95DD /* DashboardAccountTransactionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardAccountTransactionItem.swift; sourceTree = "<group>"; };
+		FCF6A308271A314F009B95DD /* DashboardAccountStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardAccountStats.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,7 +204,9 @@
 				FC2BEAA92718121F00AAF38B /* DashboardNoAccount.swift */,
 				FC2BEAB82718AC3C00AAF38B /* DashboardAccount.swift */,
 				FC2BEABA2718ACD900AAF38B /* DashboardAccountPicker.swift */,
+				FCF6A308271A314F009B95DD /* DashboardAccountStats.swift */,
 				FC2BEAC02718CFB900AAF38B /* DashboardAccountTransactionList.swift */,
+				FCF6A3062719F6A5009B95DD /* DashboardAccountTransactionItem.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -343,6 +349,7 @@
 				FC2BEAAE2718132500AAF38B /* AccountAPIService.swift in Sources */,
 				FC2BEAC12718CFB900AAF38B /* DashboardAccountTransactionList.swift in Sources */,
 				FC2BEA722717129900AAF38B /* String+Ext.swift in Sources */,
+				FCF6A309271A314F009B95DD /* DashboardAccountStats.swift in Sources */,
 				FC2BEAA42717777500AAF38B /* DashboardView.swift in Sources */,
 				FC2BEAA62717779100AAF38B /* SearchView.swift in Sources */,
 				FC2BEAAA2718121F00AAF38B /* DashboardNoAccount.swift in Sources */,
@@ -367,6 +374,7 @@
 				FC2BEA8627171A1F00AAF38B /* TheAuthView.swift in Sources */,
 				FC2BEA7E2717137B00AAF38B /* Statistic.swift in Sources */,
 				FC2BEA6E2717128C00AAF38B /* DateFormatter+Ext.swift in Sources */,
+				FCF6A3072719F6A5009B95DD /* DashboardAccountTransactionItem.swift in Sources */,
 				FC2BEAA8271777AF00AAF38B /* UserView.swift in Sources */,
 				FC2BEAAC2718128700AAF38B /* AccountStore.swift in Sources */,
 				FC2BEABB2718ACD900AAF38B /* DashboardAccountPicker.swift in Sources */,

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct DashboardAccountTransactionList: View {
     @ObservedObject var store: TransactionStore
+    @EnvironmentObject var accountStore: AccountStore
     
     var body: some View {
         if store.isLoading {
@@ -18,8 +19,27 @@ struct DashboardAccountTransactionList: View {
         } else if store.lastTransactions.isEmpty {
             Text("No transactions yet")
         } else {
-            List(store.lastTransactions) { item in
-                Text(item.title)
+            List {
+                if let account = accountStore.selectedAccount {
+                    Section {
+                        DashboardAccountStats(account: account)
+                    } footer: {
+                        Button("See more statistics") {
+                            print("more stats")
+                        }
+                    }
+                }
+                Section {
+                    ForEach(store.lastTransactions) { item in
+                        DashboardAccountTransactionItem(ts: item)
+                    }
+                } header: {
+                    Text("Last Transactions")
+                } footer: {
+                    Button("See more transaction") {
+                        print("more stats")
+                    }
+                }
             }
         }
     }

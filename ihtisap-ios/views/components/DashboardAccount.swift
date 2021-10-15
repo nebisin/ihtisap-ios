@@ -84,6 +84,7 @@ struct DashboardAccount_Previews: PreviewProvider {
         NavigationView {
             DashboardAccount()
                 .environmentObject(AccountStore())
+                .environmentObject(UserStore.mockData())
         }
     }
 }
