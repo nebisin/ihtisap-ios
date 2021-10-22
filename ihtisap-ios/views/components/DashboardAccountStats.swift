@@ -14,14 +14,22 @@ struct DashboardAccountStats: View {
         HStack {
             VStack {
                 Text("Total Expense")
+                    .font(.subheadline)
+                    .foregroundColor(.gray)
                 Text("\(account.totalExpense, specifier: "%.2F") \(account.currency.rawValue)")
+                    .bold()
+                    .foregroundColor(.red)
             }
             
             Spacer()
+            
             VStack {
                 Text("Total Income")
+                    .font(.subheadline)
+                    .foregroundColor(.gray)
                 Text("\(account.totalIncome, specifier: "%.2F") \(account.currency.rawValue)")
-
+                    .bold()
+                    .foregroundColor(.green)
             }
         }
         .padding()

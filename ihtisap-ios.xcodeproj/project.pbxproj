@@ -49,8 +49,11 @@
 		FC2BEABF2718CE6A00AAF38B /* TransactionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEABE2718CE6A00AAF38B /* TransactionStore.swift */; };
 		FC2BEAC12718CFB900AAF38B /* DashboardAccountTransactionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEAC02718CFB900AAF38B /* DashboardAccountTransactionList.swift */; };
 		FC2BEAC32718D20C00AAF38B /* CreateTransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2BEAC22718D20C00AAF38B /* CreateTransactionViewModel.swift */; };
-		FCF6A3072719F6A5009B95DD /* DashboardAccountTransactionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF6A3062719F6A5009B95DD /* DashboardAccountTransactionItem.swift */; };
+		FC3D30EE27233C350061A455 /* FilterTransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3D30ED27233C350061A455 /* FilterTransactionsView.swift */; };
+		FC3D30F027233CBF0061A455 /* FilterTransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3D30EF27233CBF0061A455 /* FilterTransactionViewModel.swift */; };
+		FCF6A3072719F6A5009B95DD /* AppTransactionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF6A3062719F6A5009B95DD /* AppTransactionItem.swift */; };
 		FCF6A309271A314F009B95DD /* DashboardAccountStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF6A308271A314F009B95DD /* DashboardAccountStats.swift */; };
+		FCF6A30B271A3ADE009B95DD /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF6A30A271A3ADE009B95DD /* SearchViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,8 +100,11 @@
 		FC2BEABE2718CE6A00AAF38B /* TransactionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionStore.swift; sourceTree = "<group>"; };
 		FC2BEAC02718CFB900AAF38B /* DashboardAccountTransactionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardAccountTransactionList.swift; sourceTree = "<group>"; };
 		FC2BEAC22718D20C00AAF38B /* CreateTransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTransactionViewModel.swift; sourceTree = "<group>"; };
-		FCF6A3062719F6A5009B95DD /* DashboardAccountTransactionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardAccountTransactionItem.swift; sourceTree = "<group>"; };
+		FC3D30ED27233C350061A455 /* FilterTransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTransactionsView.swift; sourceTree = "<group>"; };
+		FC3D30EF27233CBF0061A455 /* FilterTransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTransactionViewModel.swift; sourceTree = "<group>"; };
+		FCF6A3062719F6A5009B95DD /* AppTransactionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTransactionItem.swift; sourceTree = "<group>"; };
 		FCF6A308271A314F009B95DD /* DashboardAccountStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardAccountStats.swift; sourceTree = "<group>"; };
+		FCF6A30A271A3ADE009B95DD /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,12 +207,12 @@
 				FC2BEA9927171EA100AAF38B /* AppButtonPrimary.swift */,
 				FC2BEA9B27171EAB00AAF38B /* AppButtonSecondary.swift */,
 				FC2BEA9D271725B800AAF38B /* AppTextFieldBase.swift */,
+				FCF6A3062719F6A5009B95DD /* AppTransactionItem.swift */,
 				FC2BEAA92718121F00AAF38B /* DashboardNoAccount.swift */,
 				FC2BEAB82718AC3C00AAF38B /* DashboardAccount.swift */,
 				FC2BEABA2718ACD900AAF38B /* DashboardAccountPicker.swift */,
 				FCF6A308271A314F009B95DD /* DashboardAccountStats.swift */,
 				FC2BEAC02718CFB900AAF38B /* DashboardAccountTransactionList.swift */,
-				FCF6A3062719F6A5009B95DD /* DashboardAccountTransactionItem.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -241,8 +247,11 @@
 				FC2BEAA127172C9500AAF38B /* AuthRegisterViewModel.swift */,
 				FC2BEAA32717777500AAF38B /* DashboardView.swift */,
 				FC2BEAA52717779100AAF38B /* SearchView.swift */,
+				FCF6A30A271A3ADE009B95DD /* SearchViewModel.swift */,
 				FC2BEAA7271777AF00AAF38B /* UserView.swift */,
 				FC2BEAB62718AA8600AAF38B /* UserAccountView.swift */,
+				FC3D30ED27233C350061A455 /* FilterTransactionsView.swift */,
+				FC3D30EF27233CBF0061A455 /* FilterTransactionViewModel.swift */,
 			);
 			path = screens;
 			sourceTree = "<group>";
@@ -342,6 +351,7 @@
 				FC2BEAB1271819FE00AAF38B /* CreateAccountView.swift in Sources */,
 				FC2BEA702717129200AAF38B /* Color+Ext.swift in Sources */,
 				FC2BEAA027172C8B00AAF38B /* AuthLoginViewModel.swift in Sources */,
+				FC3D30EE27233C350061A455 /* FilterTransactionsView.swift in Sources */,
 				FC2BEAB92718AC3C00AAF38B /* DashboardAccount.swift in Sources */,
 				FC2BEA9C27171EAB00AAF38B /* AppButtonSecondary.swift in Sources */,
 				FC2BEA59271711C800AAF38B /* ihtisap_iosApp.swift in Sources */,
@@ -353,6 +363,7 @@
 				FC2BEAA42717777500AAF38B /* DashboardView.swift in Sources */,
 				FC2BEAA62717779100AAF38B /* SearchView.swift in Sources */,
 				FC2BEAAA2718121F00AAF38B /* DashboardNoAccount.swift in Sources */,
+				FC3D30F027233CBF0061A455 /* FilterTransactionViewModel.swift in Sources */,
 				FC2BEAB327181A9C00AAF38B /* CreateTransactionView.swift in Sources */,
 				FC2BEA7C2717137400AAF38B /* Transaction.swift in Sources */,
 				FC2BEABD2718B23C00AAF38B /* TransactionAPIService.swift in Sources */,
@@ -368,13 +379,14 @@
 				FC2BEA7A2717136E00AAF38B /* Account.swift in Sources */,
 				FC2BEAB72718AA8600AAF38B /* UserAccountView.swift in Sources */,
 				FC2BEA9427171E3500AAF38B /* AuthLoginView.swift in Sources */,
+				FCF6A30B271A3ADE009B95DD /* SearchViewModel.swift in Sources */,
 				FC2BEAA227172C9500AAF38B /* AuthRegisterViewModel.swift in Sources */,
 				FC2BEA8827171A3900AAF38B /* TheTabView.swift in Sources */,
 				FC2BEA742717132200AAF38B /* APIService.swift in Sources */,
 				FC2BEA8627171A1F00AAF38B /* TheAuthView.swift in Sources */,
 				FC2BEA7E2717137B00AAF38B /* Statistic.swift in Sources */,
 				FC2BEA6E2717128C00AAF38B /* DateFormatter+Ext.swift in Sources */,
-				FCF6A3072719F6A5009B95DD /* DashboardAccountTransactionItem.swift in Sources */,
+				FCF6A3072719F6A5009B95DD /* AppTransactionItem.swift in Sources */,
 				FC2BEAA8271777AF00AAF38B /* UserView.swift in Sources */,
 				FC2BEAAC2718128700AAF38B /* AccountStore.swift in Sources */,
 				FC2BEABB2718ACD900AAF38B /* DashboardAccountPicker.swift in Sources */,

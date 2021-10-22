@@ -15,7 +15,7 @@ class TransactionStore: ObservableObject {
     func fetchLastTransactions(token: String, accountID: Int) async -> Void {
         isLoading = true
                 
-        let (data, error) = await TransactionAPIService.shared.listTransactions(authToken: token, accountID: accountID)
+        let (data, error) = await TransactionAPIService.shared.listTransactions(authToken: token, accountID: accountID, limit: 7)
         
         if let error = error {
             DispatchQueue.main.async {
@@ -38,6 +38,5 @@ class TransactionStore: ObservableObject {
             self.isLoading = false
             self.errorMessage = nil
         }
-
     }
 }

@@ -31,13 +31,13 @@ struct DashboardAccountTransactionList: View {
                 }
                 Section {
                     ForEach(store.lastTransactions) { item in
-                        DashboardAccountTransactionItem(ts: item)
+                        AppTransactionItem(ts: item)
                     }
                 } header: {
                     Text("Last Transactions")
                 } footer: {
-                    Button("See more transaction") {
-                        print("more stats")
+                    NavigationLink("See more transaction") {
+                        FilterTransactionsView()
                     }
                 }
             }
